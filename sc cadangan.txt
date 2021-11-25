@@ -1,0 +1,25 @@
+color: Colors.white,
+                      child: ListTile(
+                        contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 20.0, vertical: 10.0),
+                        leading: CircleAvatar(
+                          radius: 30,
+                          backgroundImage: FadeInImage(placeholder: AssetImage("assets/images/cu chulainn.png"), image: NetworkImage(snapshot2.data![index].assets.icon)) as ImageProvider
+                          ,
+                        ),
+                        title: Text(snapshot2.data![index].name),
+                        subtitle: Text(snapshot2.data![index].attribute),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => DetailPage(
+                                  item: snapshot2.data![index].id,
+                                  title: snapshot2.data![index].name,
+                                  image: snapshot2.data![index].assets.image,
+                                  ),
+                                  
+                            ),
+                          );
+                        },
+                      ),
