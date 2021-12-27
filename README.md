@@ -1,1 +1,1 @@
-# tugas_akhir_mdp
+E7CD (Epic Seven Character Database) merupakan aplikasi mobile yang berisi list dan detail dari character game epic seven. dibuat dengan bahasa dart dan terintegrasi dengan Public API yaitu https://api.epicsevendb.com/
